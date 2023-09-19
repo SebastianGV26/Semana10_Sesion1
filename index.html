@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <section>
+        <article>
+            <h2>Pregunta 1</h2>
+            <h3>Que es una funcion y para que sirve</h3>
+            <p>Una funcion es un bloque de código que sirve para realizar una operación, se le puede declarar con parámetros para que pueda usar datos almacenados en variables</p>
+        </article>
+        <article>
+            <h2>Pregunta 2</h2>
+            <h3>Que es una funcion por declaración y que es una funcion por expresión, y en que se diferencian</h3>
+            <p>Una funcion por declaración es el tipo de funcion que permite ejecutarlo desde cualquier linea de código, incluso antes de declararla.</p>
+            <p>Una funcion por expresión es el tipo de funcion que no permite ejecutar la funcion desde cualquier linea de código, este tipo obliga a ejecutarla una vez ya la hayamos declarado.</p>
+            <p>Se diferencian en que la función por declaración no es una funcion anonima, como si lo es la funcion pr expresión, ya que está vinculada a una variable.</p>
+        </article>
+        <article>
+            <h2>Pregunta 3</h2>
+            <h3>Como crear, invocar definir parametros y argumentos</h3>
+            <p>Para crear: function FuncionEjemplo(){ }</p>
+            <p>Para invocar: FuncionEjemplo();</p>
+            <p>Para definir parametros: FuncionEjemplo(Parametro1, Parametro2){ }</p>
+            <p>Para recibir argumentos: FuncionEjemplo(Parametro1, Parametro2){ return console.log(Parametro1 + Parametro2)}</p>
+        </article>
+        <article>
+            <h2>Pregunta 4</h2>
+            <h3>Como realizar comunicación entre funciones</h3>
+            <p>function initPago(){</p>
+                <p>
+                console.log("Inicio procedimiento pago");
+            }</p>
+            <p>
+            function PagoEfectivo(efectivo){
+                console.log(`Metodo de pago: ${efectivo}`);
+            }</p>
+            <p>
+            function PagoTarjeta(){
+                console.log(`Cancelas con otro metodo de pago`);
+            }</p>
+            <p>
+            const MetodoPago = "efectivo";</p>
+            <p>
+            initPago();</p>
+            <p>
+            if(MetodoPago){</p>
+                <p>
+                PagoEfectivo(MetodoPago);</p>
+                <p>
+                console.log("Cancelas con: " + MetodoPago + ", tienes descuento");</p>
+                <p>
+                    }else{
+                        PagoTarjeta();
+            }</p>
+        </article>
+        <article>
+            <h2>Pregunta 5</h2>
+            <h3>Dar uso de arrow function</h3>
+            <p>const suma = (numero1, numero2) => {</p>
+                <p>
+                return numero1 + numero2;
+            }</p>
+        </article>
+        <article>
+            <h2>Pregunta 6</h2>
+            <h3>Funcion que determine un número par o impar</h3>
+            <p>const num = prompt("Ingrese numero mayor a 0");</p>
+            <p>
+                function parOimpar(numero){</p>
+                    <p>
+                    if(Number.parseInt(numero) % 2 == 0){</p>
+                        <p>
+                        alert("Número par");</p>
+                        <p>
+                    }else{</p>
+                        <p>
+                            alert("Número impar");</p>
+                        <p>
+                         }</p>
+                    <p>
+                    }</p>
+                    <p>
+                parOimpar(num);</p>
+        </article>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+</html>

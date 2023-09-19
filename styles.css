@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: steelblue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+article h2{
+    color: rgb(0, 0, 0);
+}
+article h3{
+    color: rgb(248, 190, 118);
+}
